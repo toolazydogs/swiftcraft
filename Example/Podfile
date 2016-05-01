@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'Swiftcraft_Example', :exclusive => true do
+  pod 'Swiftcraft', :path => '../'
+end
+
+target 'Swiftcraft_Tests', :exclusive => true do
+  pod 'Swiftcraft', :path => '../'
+
+  pod 'Quick', '~> 0.8'
+  pod 'Nimble', '~> 3.0'
+end

@@ -1,0 +1,6 @@
+framework module Swiftcraft {
+  umbrella header "Swiftcraft-umbrella.h"
+
+  export *
+  module * { export * }
+}
