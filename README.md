@@ -1,4 +1,4 @@
-# swiftcraft [![Build Status](https://travis-ci.com/toolazydogs/swiftcraft.svg?token=4FjidmZsCKKQiRCsN7ne&branch=master)](https://travis-ci.com/toolazydogs/swiftcraft)
+# swiftcraft [![Build Status](https://travis-ci.org/toolazydogs/swiftcraft.svg?branch=master)](https://travis-ci.org/toolazydogs/swiftcraft)
 A Swift minecraft client API
 
 
