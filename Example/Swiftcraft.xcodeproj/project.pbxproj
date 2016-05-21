@@ -515,7 +515,6 @@
 			baseConfigurationReference = 8EA082C61643655272450929 /* Pods-Swiftcraft_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -534,7 +533,6 @@
 			baseConfigurationReference = ED8AA517E8100346C9171CE3 /* Pods-Swiftcraft_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
