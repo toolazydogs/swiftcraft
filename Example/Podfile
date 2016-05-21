@@ -1,6 +1,6 @@
 use_frameworks!
 
-target 'Swiftcraft_Example’ do
+target 'Swiftcraft_Example' do
   pod 'Swiftcraft', :path => '../'
 end
 
