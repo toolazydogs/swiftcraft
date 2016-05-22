@@ -1,10 +1,26 @@
 PODS:
-  - Nimble (3.2.0)
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Nimble (4.0.1)
   - Quick (0.9.2)
-  - Swiftcraft (0.1.0)
+  - Swiftcraft (0.1.0):
+    - AFNetworking (~> 3.1)
 
 DEPENDENCIES:
-  - Nimble (~> 3.0)
+  - Nimble (~> 4.0)
   - Quick (~> 0.8)
   - Swiftcraft (from `../`)
 
@@ -13,10 +29,11 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Nimble: 0f3c8b8b084cda391209c3c5efbb48bedeeb920a
   Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
-  Swiftcraft: 007645af5540b1c18eb58b2fd6abcf99c1a4b3d4
+  Swiftcraft: d64ef2487a1266b2e473fdcd93d3b1b0c4fe577a
 
-PODFILE CHECKSUM: 2fa47e35919433c655357f1e059810d3b48d0f09
+PODFILE CHECKSUM: 8c87d65a7716763c324a1425e63f6f63d72b5f76
 
 COCOAPODS: 1.0.0

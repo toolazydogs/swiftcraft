@@ -8,5 +8,5 @@ target 'Swiftcraft_Tests' do
   pod 'Swiftcraft', :path => '../'
 
   pod 'Quick', '~> 0.8'
-  pod 'Nimble', '~> 3.0'
+  pod 'Nimble', '~> 4.0'
 end
