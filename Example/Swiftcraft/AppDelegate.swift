@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftSockets
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,8 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        let socket = ActiveSocket<sockaddr_in>()
+         return socket!.onRead { sock, _ in
+                let (count, block, errno) = sock.read() // $0 for sock doesn't work anymore?
+                guard count > 0 else {
+                    print("EOF, or great error handling \(errno).")
+                    return
+                }
+                print("Answer to ring,ring is: \(count) bytes: \(block)")
+            }
+            .connect("www.ibm.com:80") { socket in
+                socket.write("GET /us-en/ HTTP/1.1\r\nHost: www.ibm.com\r\n\r\n")
+        }
         // Override point for customization after application launch.
-        return true
+//        return true
     }
 
     func applicationWillResignActive(application: UIApplication) {
