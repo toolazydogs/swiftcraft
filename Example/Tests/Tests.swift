@@ -6,6 +6,12 @@ import Swiftcraft
 
 import SwiftSockets
 
+func htons(value: CUnsignedShort) -> CUnsignedShort {
+    // hm, htons is not a func in OSX and the macro is not mapped
+    return (value << 8) + (value >> 8);
+}
+
+
 class TableOfContentsSpec: QuickSpec {
     override func spec() {
         describe("these will pass") {
@@ -15,8 +21,26 @@ class TableOfContentsSpec: QuickSpec {
             }
 
             it("can connect to IBM") {
-                let socket = ActiveSocket<sockaddr_in>()
-                let isConnected = socket!.onRead { sock, _ in
+                var addr: sockaddr_in!
+
+                gethoztbyname("www.ibm.com") { (_, _, a: sockaddr_in?) in
+                    guard a != nil else {
+                        print("Unable to get DNS entry for www.ibm.com")
+                        return
+                    }
+                    addr = a!
+                }
+
+                guard addr != nil else {
+                    print("Unable to get DNS entry for www.ibm.com")
+                    return
+                }
+
+                addr.sin_port = in_port_t(htons(CUnsignedShort(80)))
+
+                let socket: ActiveSocket<sockaddr_in>! = ActiveSocket<sockaddr_in>()
+
+                socket.onRead { sock, _ in
                     let (count, block, errno) = sock.read()
                     guard count > 0 else {
                         print("EOF, or great error handling \(errno).")
@@ -24,9 +48,11 @@ class TableOfContentsSpec: QuickSpec {
                     }
                     print("Answer to ring,ring is: \(count) bytes: \(block)")
                 }
-                .connect("23.64.166.184:80") { socket in
-                        socket.write("GET /us-en/ HTTP/1.1\r\nHost: www.ibm.com\r\n\r\n")
+
+                let isConnected = socket.connect(addr) { socket in
+                    socket.write("GET /us-en/ HTTP/1.1\r\nHost: www.ibm.com\r\n\r\n")
                 }
+
                 expect(isConnected) == true
             }
 
@@ -35,9 +61,9 @@ class TableOfContentsSpec: QuickSpec {
             }
 
             it("will eventually fail") {
-                expect("time").toEventually( equal("time") )
+                expect("time").toEventually(equal("time"))
             }
-            
+
             context("these will pass") {
 
                 it("can do maths") {
