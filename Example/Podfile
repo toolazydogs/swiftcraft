@@ -2,6 +2,8 @@ use_frameworks!
 
 target 'Swiftcraft_Example' do
   pod 'Swiftcraft', :path => '../'
+
+  pod 'SwiftSockets', '~> 0.22'
 end
 
 target 'Swiftcraft_Tests' do
@@ -9,4 +11,6 @@ target 'Swiftcraft_Tests' do
 
   pod 'Quick', '~> 0.8'
   pod 'Nimble', '~> 4.0'
+
+  pod 'SwiftSockets', '~> 0.22'
 end

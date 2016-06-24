@@ -1,14 +1,14 @@
 PODS:
   - Nimble (4.0.1)
   - Quick (0.9.2)
-  - Swiftcraft (0.1.0):
-    - SwiftSockets (~> 0.22.0)
+  - Swiftcraft (0.1.0)
   - SwiftSockets (0.22.2)
 
 DEPENDENCIES:
   - Nimble (~> 4.0)
   - Quick (~> 0.8)
   - Swiftcraft (from `../`)
+  - SwiftSockets (~> 0.22)
 
 EXTERNAL SOURCES:
   Swiftcraft:
@@ -17,9 +17,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Nimble: 0f3c8b8b084cda391209c3c5efbb48bedeeb920a
   Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
-  Swiftcraft: e43391a224d78d6015dbf8176b66902d24ae0857
+  Swiftcraft: 653912e7d57e4cf39e0226d14994321025deee0f
   SwiftSockets: d916d27000b05fd7cb89ce27047d70242fd31596
 
-PODFILE CHECKSUM: 8c87d65a7716763c324a1425e63f6f63d72b5f76
+PODFILE CHECKSUM: a5cb968aa1933f156a94f9f1f70d54ec653fc3ab
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.0.1

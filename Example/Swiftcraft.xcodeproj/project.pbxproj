@@ -166,12 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Swiftcraft_Example" */;
 			buildPhases = (
-				8AC88AC51442413A79202500 /* 📦 Check Pods Manifest.lock */,
+				8AC88AC51442413A79202500 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				0F1BEBF7F7D47057D54C4B0F /* 📦 Embed Pods Frameworks */,
-				47704420BF0717FCDA253AFC /* 📦 Copy Pods Resources */,
+				0F1BEBF7F7D47057D54C4B0F /* [CP] Embed Pods Frameworks */,
+				47704420BF0717FCDA253AFC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,12 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Swiftcraft_Tests" */;
 			buildPhases = (
-				B337F7929C32381FD95C2F7F /* 📦 Check Pods Manifest.lock */,
+				B337F7929C32381FD95C2F7F /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				7E1E4E9DD40D8F7C518A8E1F /* 📦 Embed Pods Frameworks */,
-				085A5645CD8B98142E9C652A /* 📦 Copy Pods Resources */,
+				7E1E4E9DD40D8F7C518A8E1F /* [CP] Embed Pods Frameworks */,
+				085A5645CD8B98142E9C652A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,14 +262,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		085A5645CD8B98142E9C652A /* 📦 Copy Pods Resources */ = {
+		085A5645CD8B98142E9C652A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,14 +277,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swiftcraft_Tests/Pods-Swiftcraft_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		0F1BEBF7F7D47057D54C4B0F /* 📦 Embed Pods Frameworks */ = {
+		0F1BEBF7F7D47057D54C4B0F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,14 +292,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swiftcraft_Example/Pods-Swiftcraft_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		47704420BF0717FCDA253AFC /* 📦 Copy Pods Resources */ = {
+		47704420BF0717FCDA253AFC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,14 +307,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swiftcraft_Example/Pods-Swiftcraft_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7E1E4E9DD40D8F7C518A8E1F /* 📦 Embed Pods Frameworks */ = {
+		7E1E4E9DD40D8F7C518A8E1F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,14 +322,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swiftcraft_Tests/Pods-Swiftcraft_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8AC88AC51442413A79202500 /* 📦 Check Pods Manifest.lock */ = {
+		8AC88AC51442413A79202500 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,14 +337,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		B337F7929C32381FD95C2F7F /* 📦 Check Pods Manifest.lock */ = {
+		B337F7929C32381FD95C2F7F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,9 +514,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8EA082C61643655272450929 /* Pods-Swiftcraft_Tests.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -532,9 +530,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ED8AA517E8100346C9171CE3 /* Pods-Swiftcraft_Tests.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";

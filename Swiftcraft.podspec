@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Swiftcraft/Classes/*.swift'
 
-  s.dependency 'SwiftSockets', '~> 0.22.0'
+#   s.dependency 'SwiftSockets', '~> 0.22.0'
 end
